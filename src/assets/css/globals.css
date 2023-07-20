@@ -1,0 +1,13 @@
+@import './animations/wrapper.css';
+
+.required {
+    @apply after:content-['*'] after:text-red-500 after:text-center after:ml-1 after:empty:hidden;
+}
+
+input:is([type='number'], [class='number-inp'])::-webkit-outer-spin-button,
+input:is([type='number'], [class='number-inp'])::-webkit-inner-spin-button,
+input:is([type='number'], [class='number-inp']) {
+    @apply appearance-none m-0;
+    -webkit-appearance: none;
+    -moz-appearance: textfield !important;
+}

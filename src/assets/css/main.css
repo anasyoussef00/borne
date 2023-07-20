@@ -1,0 +1,15 @@
+@import './globals.css';
+
+:root {
+    --default-bg-color: #f6f6f6;
+    --default-text-color: #0f0f0f;
+
+    color: var(--default-text-color);
+    background-color: var(--default-bg-color);
+
+    font-synthesis: none;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-text-size-adjust: 100%;
+}
