@@ -41,7 +41,7 @@ import { RouterLink } from 'vue-router';
 }
 
 .renewal-modal-options-btn {
-  @apply flex flex-col items-center bg-primary rounded-xl px-8 py-3 text-white text-xl font-bold shadow-xl capitalize;
+  @apply flex flex-col items-center bg-primary w-2/3 rounded-xl py-3 text-white text-xl font-bold shadow-xl capitalize;
 }
 
 .renewal-modal-options-btn-container {

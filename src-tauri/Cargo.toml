@@ -1,7 +1,7 @@
 [package]
 name = "borne"
-version = "0.0.1"
-description = "MAMDA-MCMA Borne app ported/rewritten in Rust using Tauri and Vue/Typescript."
+version = "0.2.0"
+description = "MAMDA-MCMA Borne app ported/rewritten in Rust using Tauri and Vue/Vite/Typescript."
 authors = ["youssef00"]
 license = ""
 repository = ""

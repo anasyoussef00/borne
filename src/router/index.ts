@@ -57,9 +57,9 @@ const router = createRouter({
   routes,
 });
 
-router.beforeResolve((to, _from, next) => {
+router.beforeEach((to, _from, next) => {
   const loadingStore = useLoadingStore();
-  if (to.name) loadingStore.isLoading = true;
+  loadingStore.isLoading = true;
 
   next();
 });

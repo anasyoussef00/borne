@@ -2,7 +2,7 @@
   <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-4">
     <div class="col-span-full xl:col-span-1">
       <label for="registration-number-inp" class="rn-label required"
-        >Immatricule</label
+        >Immatriculation - رقم اللوحة</label
       >
       <input
         id="registration-number-inp"
@@ -14,7 +14,9 @@
     </div>
 
     <div class="col-span-full md:col-span-1">
-      <label for="registration-code-sel" class="rn-label required">Code</label>
+      <label for="registration-code-sel" class="rn-label required"
+        >Code - رمز</label
+      >
       <select id="registration-code-sel" class="rn-sel">
         <option value="" selected disabled>
           Veuillez sélectionner un code
@@ -32,7 +34,7 @@
       <label
         for="registration-last-2-digits-inp required"
         class="rn-label required"
-        >2 derniers chiffres</label
+        >2 derniers chiffres - آخر رقمين</label
       >
       <input
         id="registration-last-2-digits-inp"
@@ -57,4 +59,3 @@
   @apply w-full p-3 text-primary-text text-xl font-semibold bg-slate-50 focus:bg-white rounded-lg shadow-lg border-2 border-secondary focus:outline-none focus:ring;
 }
 </style>
-<script setup lang="ts"></script>

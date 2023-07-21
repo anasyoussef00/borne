@@ -6,9 +6,11 @@ withDefaults(
     imgSrc: ImgHTMLAttributes['src'];
     title: string;
     arTitle?: string;
+    objectTop?: boolean;
   }>(),
   {
     arTitle: undefined,
+    objectTop: false,
   }
 );
 </script>
@@ -27,7 +29,9 @@ withDefaults(
       <img
         :src="imgSrc"
         alt="DOCUMENT SCREENSHOT"
-        class="w-96 h-56 object-cover object-top rounded-xl mx-auto"
+        class="w-96 h-56 object-cover rounded-xl mx-auto"
+        :class="objectTop ? 'object-top' : 'object-center'"
+        loading="lazy"
       />
     </section>
   </div>

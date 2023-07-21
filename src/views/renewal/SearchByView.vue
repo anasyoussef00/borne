@@ -3,11 +3,16 @@ import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';
 import RoutingIconButtonNav from '@/components/btns/RoutingIconButtonNav.vue';
 import Swal from 'sweetalert2';
 import { useRouter, isNavigationFailure } from 'vue-router';
-import { inject } from 'vue';
+import { inject, onUnmounted } from 'vue';
+import { useFormStepsStore } from '@/stores/renewal/formSteps';
 
 const IS_DEV = inject<boolean>('IS_DEV');
 
 const router = useRouter();
+
+const formStepsStore = useFormStepsStore();
+
+onUnmounted(() => (formStepsStore.currentStepIndex = 0));
 
 const confirmExit = async () => {
   try {

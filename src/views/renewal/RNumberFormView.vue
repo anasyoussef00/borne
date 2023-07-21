@@ -1,7 +1,5 @@
 <script setup lang="ts">
-import RenewalForm from '@/components/renewal/form/RenewalForm.vue';
-// import RNumberForm from '@/components/renewal/form/productionInfo/RNumberForm.vue';
-import RNumberForm from '@/components/renewal/form/production-info/RNumberForm.vue';
+import RenewalForm from '@/components/renewal/forms/RenewalForm.vue';
 import TestComponent from '@/components/TestComponent.vue';
 import AnotherTestComponent from '@/components/AnotherTestComponent.vue';
 import { IFormStep } from '@/stores/renewal/types';
@@ -10,8 +8,8 @@ import { useFormStepsStore } from '@/stores/renewal/formSteps';
 import RoutingNavigationButton from '@/components/btns/RoutingNavigationButton.vue';
 import Swal from 'sweetalert2';
 import { isNavigationFailure, useRouter } from 'vue-router';
-import { inject, onUnmounted } from 'vue';
-import RenewalFormFooter from '@/components/renewal/form/RenewalFormFooter.vue';
+import { inject } from 'vue';
+import RNumberForm from '@/components/renewal/forms/RNumber/RNumberForm.vue';
 
 const IS_DEV = inject<boolean>('IS_DEV');
 
@@ -37,8 +35,6 @@ const router = useRouter();
 const formStepsStore = useFormStepsStore();
 
 formStepsStore.steps = steps;
-
-onUnmounted(() => (formStepsStore.currentStepIndex = 0));
 
 const test = () => {
   console.log('AAAAAAAAAAAA');
@@ -163,6 +159,7 @@ const confirmBackHome = async () => {
         title-ext="Immatriculation - رقم اللوحة"
         :steps="steps"
         img-src="/src/assets/imgs/examples/ADODVTAM.jpg"
+        object-top
       >
         <template #form-content>
           <div class="flex flex-col gap-y-8">
@@ -207,15 +204,6 @@ const confirmBackHome = async () => {
       </RenewalForm>
     </section>
   </div>
-  <!--  <div class="flex flex-col justify-center gap-y-8 min-h-screen mx-4">-->
-  <!--    <RenewalForm-->
-  <!--      title-ext="Immatriculation - رقم اللوحة"-->
-  <!--      img-src="/src/assets/imgs/examples/ADODVTAM.jpg"-->
-  <!--      :steps="steps"-->
-  <!--    >-->
-  <!--      <template #content></template>-->
-  <!--    </RenewalForm>-->
-  <!--  </div>-->
 </template>
 
 <style scoped>

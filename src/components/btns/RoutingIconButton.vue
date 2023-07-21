@@ -22,7 +22,7 @@ defineProps<{
 
 <style scoped>
 .routing-icon-btn {
-  @apply inline-flex items-center gap-x-6 bg-primary text-white font-bold px-4 py-6 rounded-xl shadow-lg text-xl;
+  @apply inline-flex items-center gap-x-6 bg-primary text-white font-bold px-4 py-6 rounded-xl shadow-2xl text-xl;
 }
 
 .label-container {

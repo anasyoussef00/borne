@@ -2,7 +2,7 @@ import { IFormStep } from '@/components/types';
 import { defineStore } from 'pinia';
 import { computed, ref } from 'vue';
 
-export const useFormStepsStore = defineStore('form-steps', () => {
+export const useFormStepsStore = defineStore('forms-steps', () => {
   const currentStepIndex = ref<number>(0);
   const steps = ref<IFormStep[]>([]);
 

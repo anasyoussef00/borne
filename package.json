@@ -10,7 +10,6 @@
     "tauri": "tauri",
     "devtools": "vue-devtools",
     "tauri:dev": "run-p devtools \"tauri dev\"",
-    "tauri:dev-host": "run-p devtools \"tauri dev --host\"",
     "lint": "eslint --ext .vue,.js,.jsx,.cjs,.mjs,.ts,.tsx,.cts,.mt --ignore-path .gitignore",
     "lint:fix": "eslint --ext .vue,.js,.jsx,.cjs,.mjs,.ts,.tsx,.cts,.mt --ignore-path .gitignore --fix",
     "format": "prettier . --write",
@@ -20,9 +19,9 @@
   "dependencies": {
     "@tauri-apps/api": "^1.4.0",
     "pinia": "^2.1.4",
-    "sweetalert2": "^11.7.12",
+    "sweetalert2": "^11.7.18",
     "vue": "^3.3.4",
-    "vue-router": "^4.2.2"
+    "vue-router": "^4.2.4"
   },
   "devDependencies": {
     "@fortawesome/fontawesome-svg-core": "^6.4.0",
@@ -30,26 +29,26 @@
     "@fortawesome/free-regular-svg-icons": "^6.4.0",
     "@fortawesome/free-solid-svg-icons": "^6.4.0",
     "@fortawesome/vue-fontawesome": "^3.0.3",
-    "@playwright/test": "^1.35.1",
+    "@playwright/test": "^1.36.1",
     "@tauri-apps/cli": "^1.4.0",
-    "@types/node": "^18.7.10",
-    "@vitejs/plugin-vue": "^4.0.0",
+    "@types/node": "^18.16.19",
+    "@vitejs/plugin-vue": "^4.2.3",
     "@vue/devtools": "^6.5.0",
     "@vue/eslint-config-prettier": "^7.1.0",
     "@vue/eslint-config-typescript": "^11.0.3",
-    "@vue/test-utils": "^2.4.0",
+    "@vue/test-utils": "^2.4.1",
     "autoprefixer": "^10.4.14",
-    "eslint": "^8.43.0",
+    "eslint": "^8.45.0",
     "eslint-plugin-vue": "^9.15.1",
     "jsdom": "^22.1.0",
     "npm-run-all": "^4.1.5",
-    "postcss": "^8.4.24",
+    "postcss": "^8.4.26",
     "prettier": "2.8.8",
-    "tailwindcss": "^3.3.2",
+    "tailwindcss": "^3.3.3",
     "typescript": "^4.9.5",
-    "vite": "^4.2.1",
+    "vite": "^4.4.6",
     "vite-plugin-eslint": "^1.8.1",
-    "vitest": "^0.32.2",
-    "vue-tsc": "^1.0.11"
+    "vitest": "^0.32.4",
+    "vue-tsc": "^1.8.5"
   }
 }

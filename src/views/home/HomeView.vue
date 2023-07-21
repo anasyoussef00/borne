@@ -6,8 +6,11 @@ import BasicCopyrightFooter from '@/components/footers/BasicCopyrightFooter.vue'
 import RoutingIconButton from '@/components/btns/RoutingIconButton.vue';
 import RenewalModal from '@/components/renewal/RenewalModal.vue';
 import { useModalStore } from '@/stores/modal';
+import { useFormStepsStore } from '@/stores/renewal/formSteps';
 
 const modalStore = useModalStore();
+const formStepsStore = useFormStepsStore();
+
 const slideImgsPath = ref<string[]>([]);
 
 onMounted(async () => {
@@ -25,7 +28,10 @@ onMounted(async () => {
   }
 });
 
-onUnmounted(() => modalStore.close());
+onUnmounted(() => {
+  modalStore.close();
+  formStepsStore.currentStepIndex = 0;
+});
 </script>
 
 <template>
